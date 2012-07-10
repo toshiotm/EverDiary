@@ -1,0 +1,209 @@
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	
+<%= stylesheet_link_tag "mobiscroll-1.5.3_css", :media => "all" %>
+<%= stylesheet_link_tag "diaries", :media => "all" %>
+<%= javascript_include_tag "jquery-1.7.1.min" %>
+<%= javascript_include_tag "jquery.mobile-1.0" %>
+<%= javascript_include_tag "mobiscroll-1.5.3" %>
+<%= javascript_include_tag "ever_diary" %>
+
+<!-- 年間一覧ページ -->
+<div data-role="page" id="ylist" >
+<div data-role="header" data-position="fixed">
+	<h1>Ever Diary</h1>
+</div>
+<div data-role="content">
+	<ul data-role="listview" data-filter="true">
+	<li data-role="list-divider">2012年</li>
+	<li><a href="#mlist">1月<span class="ui-li-count">7</span></a></li>
+	<li data-role="list-divider">2011年</li>
+	<li><a href="#mlist">12月<span class="ui-li-count">12</span></a></li>
+	<li><a href="#mlist">11月<span class="ui-li-count">2</span></a></li>
+	<li><a href="#mlist">10月<span class="ui-li-count">1</span></a></li>
+	<li><a href="#mlist">9月<span class="ui-li-count">10</span></a></li>
+	<li><a href="#mlist">8月<span class="ui-li-count">3</span></a></li>
+	<li><a href="#mlist">7月<span class="ui-li-count">3</span></a></li>
+	<li><a href="#mlist">6月<span class="ui-li-count">3</span></a></li>
+	<li><a href="#mlist">5月<span class="ui-li-count">3</span></a></li>
+	<li><a href="#mlist">4月<span class="ui-li-count">3</span></a></li>
+	<li><a href="#mlist">3月<span class="ui-li-count">3</span></a></li>
+	<li><a href="#mlist">2月<span class="ui-li-count">3</span></a></li>
+	<li><a href="#mlist">1月<span class="ui-li-count">3</span></a></li>
+	</ul>
+	<div data-role="footer" data-position="fixed" class="ui-bar">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#ylist" class="ui-btn-active">一覧</a>
+			<a href="#menu" data-icon="plus">追加</a>
+		</div>
+	</div>
+</div>
+</div><!-- /ylist -->
+
+<!-- 月間一覧ページ -->
+<div data-role="page" id="mlist" >
+<div data-role="header" data-position="fixed">
+	<a href="#ylist" data-icon="arrow-l" data-direction="reverse">Year</a>
+	<h1>2011年8月</h1>
+</div>
+<div data-role="content">
+	<ul data-role="listview" data-filter="true">
+	<li>
+		<a href="#day">
+			<h3>31日</h3>
+			<p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階</p>
+		</a>
+	</li>
+	<li>
+		<a href="#day">
+			<h3>30日</h3>
+			<p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階</p>
+		</a>
+	</li>
+	<li>
+		<a href="#day">
+			<h3>29日</h3>
+			<p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階</p>
+		</a>
+	</li>
+	<li>
+		<a href="#day">
+			<h3>28日</h3>
+			<p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階</p>
+		</a>
+	</li>
+	<li>
+		<a href="#day">
+			<h3>27日</h3>
+			<p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階</p>
+		</a>
+	</li>
+	<li>
+		<a href="#day">
+			<h3>26日</h3>
+			<p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階</p>
+		</a>
+	</li>
+	<li>
+		<a href="#day">
+			<h3>25日</h3>
+			<p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階</p>
+		</a>
+	</li>
+	<li>
+		<a href="#day">
+			<h3>24日</h3>
+			<p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階</p>
+		</a>
+	</li>
+	<li>
+		<a href="#day">
+			<h3>23日</h3>
+			<p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階</p>
+		</a>
+	</li>
+	<li>
+		<a href="#day">
+			<h3>22日</h3>
+			<p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階</p>
+		</a>
+	</li>
+	<li>
+		<a href="#day">
+			<h3>21日</h3>
+			<p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階</p>
+		</a>
+	</li>
+	</ul>
+</div>
+<div data-role="footer" data-position="fixed" class="ui-bar">
+	<a href="#ylist" data-icon="arrow-l" data-direction="reverse">Year</a>
+</div>
+</div><!-- /mlist -->
+
+
+<!-- 日別ページ編集 -->
+<div data-role="page" id="dayedit">
+<div data-role="header" data-position="fixed">
+	<a href="#day" data-icon="arrow-l" data-direction="reverse">戻る</a>
+	<h1>2011年8月27日</h1>
+	<a href="#dateedit">日付変更</a>	
+</div>
+<div data-role="content">
+	<form action="main1.php" method="post">
+	<textarea>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃たからである。小使いに負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せます</textarea>
+	</form>
+</div>
+<div data-role="footer" data-position="fixed" class="ui-bar">
+	<div class="ui-grid-b">
+		<div class="ui-block-a">
+			<a href="#day" data-role="button" data-direction="reverse">Cancel</a>
+		</div>
+		<div class="ui-block-b">
+			<a href="#day" data-role="button">Save</a>
+		</div>
+	</div>
+</div>
+</div><!-- /dayedit -->
+
+<!-- 日付変更画面 -->
+<div data-role="page" id="dateedit">
+<div data-role="header" data-position="fixed">
+	<a href="#day" data-icon="arrow-l" data-direction="reverse">戻る</a>
+	<h1>日付変更</h1>
+</div>
+<div data-role="content">
+    <div data-role="fieldcontain">
+        <label for="date1">Date</label>
+        <input type="text" name="date1" id="date1" class="mobiscroll" />
+    </div>
+</div>
+<div data-role="footer" data-position="fixed" class="ui-bar">
+	<div class="ui-grid-b">
+		<div class="ui-block-a">
+			<a href="#day" data-role="button" data-direction="reverse">Cancel</a>
+		</div>
+		<div class="ui-block-b">
+			<a href="#day" data-role="button">Save</a>
+		</div>
+	</div>
+</div>
+</div><!-- /dateedit -->
+
+<!-- 日別ページ参照 -->
+<div data-role="page" id="day">
+<div data-role="header" data-position="fixed">
+	<a href="#mlist" data-icon="arrow-l" data-direction="reverse">Month</a>
+	<h1>2011年8月27日</h1>
+	<a href="#dateedit">日付変更</a>	
+</div>
+<div data-role="content">
+	<form action="main1.php" method="post">
+	<div>
+	親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃たからである。小使いに負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せます
+	</div>
+	</form>
+</div>
+<div data-role="footer" data-position="fixed" class="ui-bar">
+	<div class="ui-grid-b">
+	<div class="ui-block-a">
+		<a href="#mlist" data-icon="arrow-l" data-role="button" data-direction="reverse">Month</a>
+	</div>
+	<div class="ui-block-b">
+		<input type="button" data-icon="arrow-u" value="prev" />
+		<input type="button" data-icon="arrow-d" value="next" />
+	</div>
+	<div class="ui-block-c">
+		<a href="#dayedit" data-role="button">Edit</a>
+	</div>
+</div>
+</div><!-- /day -->
+
+<script type="text/javascript">
+$(function(){
+
+    $('#date1').scroller({preset: 'date', theme: 'ios', mode: 'scroller' });
+    
+    
+});
+
+</script>
